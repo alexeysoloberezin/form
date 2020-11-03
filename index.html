@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="select.css">
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css"> -->
+  <link rel="stylesheet" href="datepicker.css">
+  <!-- link -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form class="sorting form" action="#">
+      <div class="sorting__inner  sorting__state">        
+        <label class="sorting__label">По статусу:</label>
+        <select class="form__select" name="form__select" id="form__select">
+          <option value="Все">Все</option>
+          <option value="Доставлен">Доставлен</option>
+          <option value="Находится в обработке">Находится в обработке</option>
+          <option value="Принят">Принят</option>   
+        </select>
+      </div>
+      <div class="sorting__date">
+        <div class="sorting__wrapper">
+          <label class="sorting__label">Дата с:</label>
+          <input type="text" class="datepicker-before datepicker" placeholder="01.01.2020">
+        </div>
+        <div class="sorting__wrapper">
+          <label class="sorting__label">по:</label>
+          <input  type="text" class="datepicker-after datepicker" placeholder="01.01.2020">
+        </div>
+        
+      </div>
+      <div class="sorting__inner">
+        <label class="sorting__label">Сортировать по:</label>
+        <select class="sorting__select" name="sorting__select" id="sorting__select">
+          <option value="Дате">Дате</option>
+          <option value="Цене">Цене</option>
+          <option value="Времени">Времени</option>         
+        </select>
+      </div>
+    </form>
+    <div class="order ">
+      <div class="order__header">
+        <div class="order__box w-100">
+          <p class="order__nomber">Заказ №1235-459546</p>
+          <input class="order__date" type="text" readonly="readonly" value="от 20 сентября 2020">
+        </div>
+        <div class="order__wrap">
+          <div class="order__status">
+            <img class="order__icon" src="img/icon1.png" alt="">
+            <p> Доставлен</p>
+          </div>
+          <div class="order__grow">
+            <p class="order__price">44 500<span>,00</span> &#8381;</p>
+            <p class="order__text">Оплачено картой</p>
+          </div>
+        </div>        
+        <div class="order__wrapper">
+          <p class="order__symbol">i</p>
+          <p class="order__link">Детали заказа</p>
+        </div>
+      </div>
+      <div class="order__drop">
+        <div class="order__inner">
+          <div class="order__line ">
+            <p class="order__delivery">Доставка курьером</p>
+            <p class="order__stat">Получено</p>         
+          </div>
+          <div class="order__line order__drop-inner">
+            <p class="order__drop-date">Дата доставки: </p>
+            <input class="order__drop-inp" type="text" value="20 сентября 2020" readonly="readonly">
+          </div>          
+        </div>
+        <a class="order__review order__wrapper order__comment" href="#">
+          <p class="order__comment-img"><img src="img/comment.png" alt=""></p> 
+          <p class="order__link">Написать отзыв</p>
+        </a>
+      </div>
+    </div>
+    <div class="order">
+      <div class="order__header">
+        <div class="order__box w-100">
+          <p class="order__nomber">Заказ №1235-459547</p>
+          <input class="order__date" type="text" readonly="readonly" value="от 22 сентября 2020">
+        </div>
+        <div class="order__wrap">
+          <div class="order__status order__time">
+            <img class="order__icon" src="img/icon2.png" alt="">
+            <p>Находится в обработке</p>
+          </div>
+          <div class="order__grow">
+            <p class="order__price">44 500<span>,00</span> &#8381;</p>
+            <p class="order__text">Оплачено картой</p>
+          </div>
+        </div>        
+        <div class="order__wrapper">
+          <p class="order__symbol">i</p>
+          <p class="order__link">Детали заказа</p>
+        </div>
+      </div>
+      <div class="order__drop">
+        <div class="order__inner">
+          <div class="order__line ">
+            <p class="order__delivery">Доставка курьером</p>
+            <p class="order__stat">В обработке</p>         
+          </div>
+          <div class="order__line order__drop-inner">
+            <p class="order__drop-date">Дата доставки: </p>
+            <input class="order__drop-inp" type="text" value="22 сентября 2020" readonly="readonly">
+          </div>          
+        </div>
+        <a class="order__review order__wrapper order__comment" href="#">
+          <p class="order__comment-img"><img src="img/comment.png" alt=""></p> 
+          <p class="order__link ">Написать отзыв</p>
+        </a>
+      </div>
+    </div>
+    <div class="order">
+      <div class="order__header">
+        <div class="order__box w-100">
+          <p class="order__nomber">Заказ №1235-459548</p>
+          <input class="order__date" type="text" readonly="readonly" value="от 22 сентября 2020">
+        </div>
+        <div class="order__wrap">
+          <div class="order__status order__time">
+            <img class="order__icon" src="img/icon3.png" alt="">
+            <p>Принят</p>
+          </div>          
+          <div class="order__grow">
+            <p class="order__price">44 500<span>,00</span> &#8381;</p>
+            <p class="order__text">Оплачено картой</p>
+          </div>
+        </div>       
+        <div class="order__wrapper">
+          <p class="order__symbol">i</p>
+          <p class="order__link">Детали заказа</p>
+        </div>
+      </div>
+      <div class="order__drop">
+        <div class="order__inner">
+          <div class="order__line ">
+            <p class="order__delivery">Доставка курьером</p>
+            <p class="order__stat">Принят</p>         
+          </div>
+          <div class="order__line order__drop-inner">
+            <p class="order__drop-date">Дата доставки: </p>
+            <input class="order__drop-inp" type="text" value="22 сентября 2020" readonly="readonly">
+          </div>          
+        </div>
+        <a class="order__review order__wrapper order__comment" href="#">
+          <p class="order__comment-img"><img src="img/comment.png" alt=""></p> 
+          <p class="order__link">Написать отзыв</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="select.js"></script>
+  <script>
+    
+    $( function() {
+      $('.order__wrapper').click(function() {
+        $(this).parent().next().toggleClass('in');  
+        $(this).parent().toggleClass('active-head');
+      })     
+      $( ".datepicker-before" ).datepicker({
+       dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+       monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+       dateFormat: "dd.mm.yy"      
+     });     
+      $( ".datepicker-after" ).datepicker({
+        dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+        monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+        dateFormat: "dd.mm.yy"
+      });
+      $( ".datepicker-before" ).datepicker( "setDate", "01.01.2020" );
+      $( ".datepicker-after" ).datepicker( "setDate", "01.10.2020" );     
+    });    
+    </script>
+</body>
+</html>
